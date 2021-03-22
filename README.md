@@ -163,3 +163,5 @@ docker-compose down && docker-compose up
 [1° Conteinerização de scripts em Python](https://github.com/claudimf/containerized_python)
 
 [2° Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+
+[3° Enumerate](https://docs.python.org/3/library/functions.html#enumerate)
