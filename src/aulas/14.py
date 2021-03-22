@@ -15,6 +15,9 @@ class ContaSalario():
     def __eq__(self, outro):
         return self._codigo == outro._codigo and self._saldo == outro._saldo
 
+    def __lt__(self, outro):
+        return self._saldo < outro._saldo
+
 conta_do_guilherme = ContaSalario(17)
 conta_do_guilherme.deposita(500)
 
@@ -26,23 +29,13 @@ conta_do_paulo.deposita(510)
 
 contas = [conta_do_guilherme, conta_da_daniela, conta_do_paulo]
 
+print(conta_do_guilherme < conta_da_daniela)
 
-def extrai_saldo(conta):
-    return conta._saldo
+print(conta_do_guilherme > conta_da_daniela)
 
-
-for conta in sorted(contas, key=extrai_saldo):
+for conta in sorted(contas):
     print(conta)
 
 
-for conta in sorted(contas, key=extrai_saldo, reverse=True):
-    print(conta)
-
-
-# utilizando o attrgetter
-
-for conta in sorted(contas, key=attrgetter('_saldo')):
-    print(conta)
-
-for conta in sorted(contas, key=attrgetter('_saldo'), reverse=True):
+for conta in sorted(contas, reverse=True):
     print(conta)
