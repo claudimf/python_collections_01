@@ -165,3 +165,5 @@ docker-compose down && docker-compose up
 [2° Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 [3° Enumerate](https://docs.python.org/3/library/functions.html#enumerate)
+
+[4° Total Ordering](https://docs.python.org/3/library/functools.html#functools.total_ordering)
