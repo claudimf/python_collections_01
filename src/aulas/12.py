@@ -13,3 +13,7 @@ print(idades)
 idades.sort()
 
 print(idades)
+
+nomes = ['Guilherme', 'Daniela', 'Paulo']
+print(sorted(nomes))
+print(sorted(nomes, reverse=True))
